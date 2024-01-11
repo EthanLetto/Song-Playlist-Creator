@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Playlist App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        table, td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="playlist-area">
+            Playlist
+            <table id="playlist_table">
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody id="playlistTable"></tbody>
+            </table>
+        </div>
+
+        <div class="input-area">
+            Enter Song Title: <input type="text" name="city" id="songTitleTextField" />
+            <button id="submit_button" style="margin-bottom: 50px;">Submit</button>
+        </div>
+
+        <div id="songsMatching">
+        </div>
+
+        <div class="search-results-area" id="songs_div">
+            <table id="songsTable">
+                <thead>
+                    <tr>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
